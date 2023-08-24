@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta content='yes' name='apple-mobile-web-app-capable' />
+
+    <meta content='yes' name='mobile-web-app-capable' />
+
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+
+    <meta name="theme-color" content="black">
+
+    <link rel="apple-touch-icon" href="assets/logos/icon-192x192-apple.png">
+    <title>Billie Eilish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    <div class="titulo">
+    <h1>Billie Eilish</h1>
+    </div>
+
+    <div class="inicio">
+
+    <p>Billie Eilish, uma artista visionária, é reconhecida por sua música autêntica e estilo marcante. Com letras profundas e voz distinta, ela se tornou um ícone pop. Sua influência transcende a música, abordando questões sociais importantes.<br> Vencedora de vários prêmios, incluindo Grammys, ela inspira autenticidade e mudança positiva, deixando uma marca duradoura na cultura contemporânea.</p>
+    </div>
+
+
+    <div class="container">
+        <div class="image">
+
+          <img src="imagem/bill.jpg" alt="Billie Eilish">
+        </div>
+
+    <div class="descricao">
+
+    <li>Idade: 21 anos</li>
+    <li>Altura: 1,61 m</li>
+    <li>Los Angeles, CA</li>
+    <li>Cantora e compositora</li>
+    </div>
+
+
+    <div class="hobbies">
+        <h3>Hobbies</h3>
+        
+        <ul>Dançarina</ul>
+        <ul>Gosta de assistir Animes</ul>
+        <ul>Fazia aulas de Hipismo</ul>
+        <ul>Fazia aula de tecido</ul>
+    </div>
+
+
+    <div class="image2">
+        <img src="imagem/billiecavalo.jpg" alt="Billie Eilish">
+    </div>
+    </div>
+
+    <div class="destaque">
+    <strong>
+        <em> Billie Eilish fez história em seu primeiro Grammy Awards ao conquistar cinco prêmios nas maiores categorias da cerimônia, e se tornou então uma das artistas mais jovens e a primeira mulher a fazer algo assim na história.</em>
+    </strong>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Billie Eilish Fan Site. Todos os direitos reservados.<br>  (555) 123-4567<br>  contato@billieeilishfanmail.com</p>
+    </footer>
+    
+    <script>
+
+ 
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+    
+            if ('serviceWorker' in navigator) {
+    
+                console.log('has serviceworker');
+    
+                window.addEventListener('load', () => {
+    
+                    navigator.serviceWorker.register('serviceWorker.js')
+    
+                        .then((registration) => {
+    
+                            console.log('Service worker registered.', registration);
+    
+                        });
+    
+                });
+    
+     
+    
+            }
+    
+            else {
+    
+                console.log("Your browser not supports serviceWorkers");
+    
+            }
+    
+        });
+    
+    </script>
+</header>
+    
+</body>
+</html>
